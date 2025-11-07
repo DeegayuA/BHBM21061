@@ -43,3 +43,18 @@ cd repository-name
 npm install
 npm start
 ```
+
+## Portfolio DB
+
+This repository includes a small SQLite database used to store portfolio project entries.
+
+- DB file: `data/portfolio.db`
+- Table: `projects` (id, title, description, url, tech, date)
+
+To (re)create the DB and populate it with two example projects, run:
+
+```bash
+python3 scripts/add_portfolio_projects.py
+```
+
+The script will create `data/portfolio.db` if it doesn't exist and insert two example rows (it skips duplicates by title).

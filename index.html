@@ -1,56 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deeghayu Adhikari | Portfolio</title>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-   <header>
-     <h1>Deeghayu Adhikari</h1>
-     <div class="class">New Class</div>
-     <div id="id">New ID</div>
-     <img src="/src/image.jpg" alt="Description of image">
-   </header>
-    <main>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">Deeghayu Adhikari</div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <section id="about" class="about-section">
-            <div class="about-container">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>Hello! I'm Deeghayu Adhikari, a passionate developer and tech enthusiast. I love creating innovative solutions and exploring new technologies. I enjoy working with IoT, AI, and modern web technologies to build meaningful projects.</p>
-                </div>
-                <div class="about-image">
-                    <img src="/src/about.jpg" alt="Deeghayu Adhikari profile photo">
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <ul>
-                <li>Project A - A web application for managing tasks.</li>
-                <li>Project B - A mobile app for tracking fitness activities.</li>
-                <li>Project C - An open-source library for data visualization.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <p>You can reach me at <a href="mailto:deeghayu@example.com">deeghayu@example.com</a></p>   
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Deeghayu Adhikari</p>
-        <p>Follow me on <a href="https://twitter.com/deeghayu">Twitter</a> | <a href="https://github.com/deeghayu">GitHub</a></p>
-    </footer>
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">Deeghayu<span>Adhikari</span></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <section id="hero" class="hero-section">
+    <div class="container hero-content">
+      <h1>Hello, I'm <span>Deeghayu Adhikari</span></h1>
+      <p>Electronics Engineer | IoT & AI Developer | Innovator</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section container">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="/src/about.jpg" alt="Deeghayu Adhikari profile photo">
+      <p>I'm an electronics engineer and developer passionate about building intelligent systems that bridge hardware and software. My expertise includes IoT, AI, and full-stack web development. I aim to create technology that makes life smarter and more sustainable.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">IoT Systems</div>
+      <div class="skill-card">Embedded Development</div>
+      <div class="skill-card">Artificial Intelligence</div>
+      <div class="skill-card">Web Development</div>
+      <div class="skill-card">Machine Learning</div>
+      <div class="skill-card">Cloud Integration</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section container">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Smart Meter IoT Platform</h3>
+        <p>An intelligent system to monitor and control power consumption with MQTT and cloud analytics.</p>
+      </div>
+      <div class="project-card">
+        <h3>AI Navigation Car</h3>
+        <p>Autonomous navigation system using real-time video processing and distance measurement.</p>
+      </div>
+      <div class="project-card">
+        <h3>EV Charging Network</h3>
+        <p>Scalable OCPP-based EV charger control and management web application.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- new section with 10 cards -->
+  <section id="achievements" class="achievements-section container">
+    <h2>Achievements & Highlights</h2>
+    <div class="cards-grid">
+      <div class="card">Published Research Paper on IoT-based Smart Grids</div>
+      <div class="card">Winner – National Robotics Competition 2023</div>
+      <div class="card">Developed AI-Powered Traffic Monitoring System</div>
+      <div class="card">Completed Internship at Leading Tech Company</div>
+      <div class="card">Presented at IEEE International Conference 2024</div>
+      <div class="card">Designed Real-Time Energy Monitoring Platform</div>
+      <div class="card">Built Smart Home Automation System using ESP32</div>
+      <div class="card">Implemented Edge AI Object Detection Model</div>
+      <div class="card">Mentored Students on IoT & Embedded Systems</div>
+      <div class="card">Volunteered in Sustainability & Green Energy Projects</div>
+    </div>
+  </section>
+   
+
+
+  <section id="contact" class="contact-section container">
+    <h2>Contact Me</h2>
+    <p>Interested in collaborating or have a project in mind? Let’s get in touch!</p>
+    <form class="contact-form" action="#" method="POST">
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+      </div>
+      <div class="form-group">
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn primary">Send Message</button>
+      <button type="reset" class="btn ">Reset</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Deeghayu Adhikari</p>
+    <p>Connect on <a href="https://github.com/deeghayu" target="_blank">GitHub</a> • <a href="https://twitter.com/deeghayu" target="_blank">Twitter</a></p>
+  </footer>
+
+  <script src="/scripts/main.js"></script>
 </body>
 </html>
